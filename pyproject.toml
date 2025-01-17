@@ -1,0 +1,35 @@
+[build-system]
+requires = [
+    "setuptools>=64.0", # 64 appears to be first version with "editable" mode support without setup.py
+    "setuptools-scm",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wc-pyproject-template"
+# version = "0.0.1"
+authors = [
+    { name = "Ben Weiner", email = "Benjamin.Weiner@lexisnexisrisk.com" },
+]
+description = "Demo project that conforms to the tutorial at https://packaging.python.org/en/latest/tutorials/packaging-projects "
+requires-python = ">=3.8"
+# long_description = file: README.md
+# long_description_content_type = text/markdown
+classifiers = [
+    "Programming Language :: Python :: 3",
+    # "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["version"] # base version on tags instead of this file
+## Demo of dependecies section
+dependencies = [
+    'PyGithub',
+]
+[project.optional-dependencies]
+## Demo of optional dependencies section
+test = ['pytest']
+
+[project.urls]
+"Homepage" = "https://github.com/LexisNexis-RBA/wc-pyproject-template"
+
+[tool.setuptools_scm]
