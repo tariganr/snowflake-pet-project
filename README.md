@@ -44,7 +44,7 @@ bash snowsql-1.3.2-linux_x86_64.bash
 
 # Login to SnowSQL
 ```bash
-snowsql -a dq30603.eu-west-1 -u tariganr@b2b.regn.net -r "RBI-UK QHS TECH UK PD FLIGHTTEAM" --authenticator externalbrowser
+snowsql -a <server ID> -u <B2B user ID> -r "RBI-UK QHS TECH UK PD FLIGHTTEAM" --authenticator externalbrowser
 ```
 
 # Useful SQL
