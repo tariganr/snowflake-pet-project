@@ -15,7 +15,7 @@ Try: snow --version
 $ curl -O https://sfc-repo.snowflakecomputing.com/snowsql/bootstrap/<bootstrap_version>/linux_x86_64/snowsql-<version>-linux_x86_64.bash
 ```
 
-where <bootstrap_version> is 1.3 and <version> is 1.3.2
+where `<bootstrap_version>` is 1.3 and `<version>` is 1.3.2
 
 To verify
 ```bash
