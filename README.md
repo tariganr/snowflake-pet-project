@@ -48,6 +48,7 @@ snowsql -a <server ID> -u <B2B user ID> -r "RBI-UK QHS TECH UK PD FLIGHTTEAM" --
 ```
 
 # Useful SQL
+## General
 ```sql
 SELECT CURRENT_DATABASE(), CURRENT_SCHEMA();
 SELECT CURRENT_WAREHOUSE();
@@ -90,4 +91,13 @@ INSERT INTO "emp_basic" VALUES
    ('Clementine','Adamou','cadamou@sf_tuts.com','10510 Sachs Road','Klenak','2017-9-22') ,
    ('Marlowe','De Anesy','madamouc@sf_tuts.co.uk','36768 Northfield Plaza','Fangshan','2017-1-26');
 
+```
+
+## snowsql
+```sql
+-- Put a single file to a stage named "tar_sample"
+put file://jt_sample2.parquet @tar_sample;
+
+-- Put multiple files prefixed with "2m" to a stage named "tar_sample"
+put file://2m* @tar_sample;
 ```
